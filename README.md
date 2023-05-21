@@ -1,6 +1,7 @@
-# electron-okx
+# bHost
 
-An Electron application with React and TypeScript
+bHost 是一个管理电脑 host 文件的应用，基于 Electron 、React、Redux 、Monaco、Antd 等技术开发。
+
 
 ## Recommended IDE Setup
 
