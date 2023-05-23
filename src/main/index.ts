@@ -76,7 +76,11 @@ app.whenReady().then(() => {
     }
   ])
   tray.on('click', () => {
-    if (BrowserWindow.getAllWindows().length === 0) createWindow()
+    if (BrowserWindow.getAllWindows().length === 0) {
+      createWindow()
+    } else {
+      BrowserWindow.getAllWindows()[0].show()
+    }
   })
   tray.setContextMenu(contextMenu)
   // Default open or close DevTools by F12 in development
